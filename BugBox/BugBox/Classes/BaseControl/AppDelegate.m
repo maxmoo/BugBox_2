@@ -10,6 +10,8 @@
 #import "AFNetworking.h"
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloudIM.h>
+#import "NSUserDefaults+DemoSettings.h"
+#import "LeanMessageManager.h"
 
 @interface AppDelegate ()
 
@@ -35,7 +37,8 @@
     [AVOSCloud setApplicationId:@"IebA3lOd1JnlpP1xinB7f5kV-gzGzoHsz"
                       clientKey:@"j9JHUMOafVygStplw7GaGuWt"];
     
-    
+    [NSUserDefaults saveIncomingAvatarSetting:YES];
+    [NSUserDefaults saveOutgoingAvatarSetting:YES];
     //使用AF监听网络状态
     // 监控网络状态
     [[AFNetworkReachabilityManager sharedManager] startMonitoring];
@@ -49,6 +52,7 @@
      }
      */
     
+    [self initData];
     
     return YES;
 }
@@ -73,6 +77,18 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (void)initData{
+    /*
+     self.userId         = [dict objectForKey:@"objectId"];
+     self.teams          = [dict objectForKey:@"teams"];
+     self.projects       = [dict objectForKey:@"projects"];
+     self.nickName       = [dict objectForKey:@"nickName"];
+     self.phoneNumber    = [dict objectForKey:@"phoneNumber"];
+     */
+    NSDictionary *dic = [NSDictionary dictionaryWithObjectsAndKeys:@"572311c871cfe400575e54ea",@"objectId",@"Jack",@"nickName", nil];
+    self.user = [[LCUser alloc] initUserWithDictionary:dic];
 }
 
 @end

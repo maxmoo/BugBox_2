@@ -30,9 +30,9 @@
     
     self.view.backgroundColor = BACKCOLOR;
 
-    [self initSubviews];
+//    [self initSubviews];
     
-    [self tomSendMessageToJerry];
+//    [self tomSendMessageToJerry];
 }
 //tom-----------------------------------------------------------------------
 - (void)tomSendMessageToJerry {

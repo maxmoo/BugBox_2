@@ -89,6 +89,21 @@
 		AAE0F2CA1CD9D1AE009E0DE3 /* KeyUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2741CD9D1AE009E0DE3 /* KeyUserManager.m */; };
 		AAE0F2CB1CD9D1AE009E0DE3 /* MBTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2771CD9D1AE009E0DE3 /* MBTools.m */; };
 		AAE0F2CC1CD9D1AE009E0DE3 /* ObjcRuntime.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F27A1CD9D1AE009E0DE3 /* ObjcRuntime.m */; };
+		AAE0F2D51CD9D6D1009E0DE3 /* libAFNetworking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2CD1CD9D6D1009E0DE3 /* libAFNetworking.a */; };
+		AAE0F2D61CD9D6D1009E0DE3 /* libDateTools.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2CE1CD9D6D1009E0DE3 /* libDateTools.a */; };
+		AAE0F2D71CD9D6D1009E0DE3 /* libFMDB.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2CF1CD9D6D1009E0DE3 /* libFMDB.a */; };
+		AAE0F2D81CD9D6D1009E0DE3 /* libJSBadgeView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2D01CD9D6D1009E0DE3 /* libJSBadgeView.a */; };
+		AAE0F2DA1CD9D6D1009E0DE3 /* libMBProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2D21CD9D6D1009E0DE3 /* libMBProgressHUD.a */; };
+		AAE0F2DB1CD9D6D1009E0DE3 /* libMJRefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2D31CD9D6D1009E0DE3 /* libMJRefresh.a */; };
+		AAE0F2DC1CD9D6D1009E0DE3 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2D41CD9D6D1009E0DE3 /* libSDWebImage.a */; };
+		AAE0F2E41CD9DAE6009E0DE3 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2E31CD9DAE6009E0DE3 /* ChatViewController.m */; };
+		AAE0F2E81CD9F85F009E0DE3 /* LeanMessageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2E71CD9F85F009E0DE3 /* LeanMessageManager.m */; };
+		AAE0F2F01CD9F8D3009E0DE3 /* DemoMessagesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2EB1CD9F8D3009E0DE3 /* DemoMessagesViewController.m */; };
+		AAE0F2F11CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2ED1CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.m */; };
+		AAE0F2F21CD9F8D3009E0DE3 /* XHPhotographyHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2EF1CD9F8D3009E0DE3 /* XHPhotographyHelper.m */; };
+		AAE0F2F61CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2F51CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m */; };
+		AAE0F2F91CD9FB44009E0DE3 /* libJSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2F71CD9FB44009E0DE3 /* libJSQMessagesViewController.a */; };
+		AAE0F2FA1CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2F81CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a */; };
 		B0E8F43A08011EAD63CC05C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 194DEB091209B55D56EB2BBC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -236,6 +251,28 @@
 		AAE0F2771CD9D1AE009E0DE3 /* MBTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBTools.m; sourceTree = "<group>"; };
 		AAE0F2791CD9D1AE009E0DE3 /* ObjcRuntime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjcRuntime.h; sourceTree = "<group>"; };
 		AAE0F27A1CD9D1AE009E0DE3 /* ObjcRuntime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjcRuntime.m; sourceTree = "<group>"; };
+		AAE0F2CD1CD9D6D1009E0DE3 /* libAFNetworking.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAFNetworking.a; path = "Pods/../build/Debug-iphoneos/libAFNetworking.a"; sourceTree = "<group>"; };
+		AAE0F2CE1CD9D6D1009E0DE3 /* libDateTools.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libDateTools.a; path = "Pods/../build/Debug-iphoneos/libDateTools.a"; sourceTree = "<group>"; };
+		AAE0F2CF1CD9D6D1009E0DE3 /* libFMDB.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFMDB.a; path = "Pods/../build/Debug-iphoneos/libFMDB.a"; sourceTree = "<group>"; };
+		AAE0F2D01CD9D6D1009E0DE3 /* libJSBadgeView.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSBadgeView.a; path = "Pods/../build/Debug-iphoneos/libJSBadgeView.a"; sourceTree = "<group>"; };
+		AAE0F2D11CD9D6D1009E0DE3 /* libLeanChatLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libLeanChatLib.a; path = "Pods/../build/Debug-iphoneos/libLeanChatLib.a"; sourceTree = "<group>"; };
+		AAE0F2D21CD9D6D1009E0DE3 /* libMBProgressHUD.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMBProgressHUD.a; path = "Pods/../build/Debug-iphoneos/libMBProgressHUD.a"; sourceTree = "<group>"; };
+		AAE0F2D31CD9D6D1009E0DE3 /* libMJRefresh.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libMJRefresh.a; path = "Pods/../build/Debug-iphoneos/libMJRefresh.a"; sourceTree = "<group>"; };
+		AAE0F2D41CD9D6D1009E0DE3 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		AAE0F2E21CD9DAE6009E0DE3 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		AAE0F2E31CD9DAE6009E0DE3 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		AAE0F2E61CD9F85F009E0DE3 /* LeanMessageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanMessageManager.h; sourceTree = "<group>"; };
+		AAE0F2E71CD9F85F009E0DE3 /* LeanMessageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanMessageManager.m; sourceTree = "<group>"; };
+		AAE0F2EA1CD9F8D3009E0DE3 /* DemoMessagesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoMessagesViewController.h; sourceTree = "<group>"; };
+		AAE0F2EB1CD9F8D3009E0DE3 /* DemoMessagesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoMessagesViewController.m; sourceTree = "<group>"; };
+		AAE0F2EC1CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+DemoSettings.h"; sourceTree = "<group>"; };
+		AAE0F2ED1CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+DemoSettings.m"; sourceTree = "<group>"; };
+		AAE0F2EE1CD9F8D3009E0DE3 /* XHPhotographyHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHPhotographyHelper.h; sourceTree = "<group>"; };
+		AAE0F2EF1CD9F8D3009E0DE3 /* XHPhotographyHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHPhotographyHelper.m; sourceTree = "<group>"; };
+		AAE0F2F41CD9FAA4009E0DE3 /* XHDisplayMediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHDisplayMediaViewController.h; sourceTree = "<group>"; };
+		AAE0F2F51CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDisplayMediaViewController.m; sourceTree = "<group>"; };
+		AAE0F2F71CD9FB44009E0DE3 /* libJSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQMessagesViewController.a; path = "Pods/../build/Debug-iphoneos/libJSQMessagesViewController.a"; sourceTree = "<group>"; };
+		AAE0F2F81CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQSystemSoundPlayer.a; path = "Pods/../build/Debug-iphoneos/libJSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +280,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAE0F2F91CD9FB44009E0DE3 /* libJSQMessagesViewController.a in Frameworks */,
+				AAE0F2FA1CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a in Frameworks */,
+				AAE0F2D51CD9D6D1009E0DE3 /* libAFNetworking.a in Frameworks */,
+				AAE0F2D61CD9D6D1009E0DE3 /* libDateTools.a in Frameworks */,
+				AAE0F2D71CD9D6D1009E0DE3 /* libFMDB.a in Frameworks */,
+				AAE0F2D81CD9D6D1009E0DE3 /* libJSBadgeView.a in Frameworks */,
+				AAE0F2DA1CD9D6D1009E0DE3 /* libMBProgressHUD.a in Frameworks */,
+				AAE0F2DB1CD9D6D1009E0DE3 /* libMJRefresh.a in Frameworks */,
+				AAE0F2DC1CD9D6D1009E0DE3 /* libSDWebImage.a in Frameworks */,
 				B0E8F43A08011EAD63CC05C6 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +379,10 @@
 		AAE0F1D01CD9D1AE009E0DE3 /* addressBook */ = {
 			isa = PBXGroup;
 			children = (
+				AAE0F2F31CD9FAA4009E0DE3 /* display */,
+				AAE0F2E91CD9F8D3009E0DE3 /* chatConfig */,
+				AAE0F2E51CD9F85F009E0DE3 /* leanCloud */,
+				AAE0F2E11CD9DAE6009E0DE3 /* chat */,
 				AAE0F1D11CD9D1AE009E0DE3 /* AddressBookController.h */,
 				AAE0F1D21CD9D1AE009E0DE3 /* AddressBookController.m */,
 				AAE0F1D31CD9D1AE009E0DE3 /* AddressTableCell.h */,
@@ -767,9 +817,59 @@
 			path = ObjcRuntime;
 			sourceTree = "<group>";
 		};
+		AAE0F2E11CD9DAE6009E0DE3 /* chat */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0F2E21CD9DAE6009E0DE3 /* ChatViewController.h */,
+				AAE0F2E31CD9DAE6009E0DE3 /* ChatViewController.m */,
+			);
+			path = chat;
+			sourceTree = "<group>";
+		};
+		AAE0F2E51CD9F85F009E0DE3 /* leanCloud */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0F2E61CD9F85F009E0DE3 /* LeanMessageManager.h */,
+				AAE0F2E71CD9F85F009E0DE3 /* LeanMessageManager.m */,
+			);
+			path = leanCloud;
+			sourceTree = "<group>";
+		};
+		AAE0F2E91CD9F8D3009E0DE3 /* chatConfig */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0F2EA1CD9F8D3009E0DE3 /* DemoMessagesViewController.h */,
+				AAE0F2EB1CD9F8D3009E0DE3 /* DemoMessagesViewController.m */,
+				AAE0F2EC1CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.h */,
+				AAE0F2ED1CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.m */,
+				AAE0F2EE1CD9F8D3009E0DE3 /* XHPhotographyHelper.h */,
+				AAE0F2EF1CD9F8D3009E0DE3 /* XHPhotographyHelper.m */,
+			);
+			path = chatConfig;
+			sourceTree = "<group>";
+		};
+		AAE0F2F31CD9FAA4009E0DE3 /* display */ = {
+			isa = PBXGroup;
+			children = (
+				AAE0F2F41CD9FAA4009E0DE3 /* XHDisplayMediaViewController.h */,
+				AAE0F2F51CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m */,
+			);
+			path = display;
+			sourceTree = "<group>";
+		};
 		B79A11CD8F8F1C802805893B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AAE0F2F71CD9FB44009E0DE3 /* libJSQMessagesViewController.a */,
+				AAE0F2F81CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a */,
+				AAE0F2CD1CD9D6D1009E0DE3 /* libAFNetworking.a */,
+				AAE0F2CE1CD9D6D1009E0DE3 /* libDateTools.a */,
+				AAE0F2CF1CD9D6D1009E0DE3 /* libFMDB.a */,
+				AAE0F2D01CD9D6D1009E0DE3 /* libJSBadgeView.a */,
+				AAE0F2D11CD9D6D1009E0DE3 /* libLeanChatLib.a */,
+				AAE0F2D21CD9D6D1009E0DE3 /* libMBProgressHUD.a */,
+				AAE0F2D31CD9D6D1009E0DE3 /* libMJRefresh.a */,
+				AAE0F2D41CD9D6D1009E0DE3 /* libSDWebImage.a */,
 				194DEB091209B55D56EB2BBC /* libPods.a */,
 			);
 			name = Frameworks;
@@ -922,10 +1022,14 @@
 				AAE0F2811CD9D1AE009E0DE3 /* MeViewController.m in Sources */,
 				AAE0F2991CD9D1AE009E0DE3 /* NSDictionary+URL.m in Sources */,
 				AAE0F27F1CD9D1AE009E0DE3 /* AddressBookController.m in Sources */,
+				AAE0F2E81CD9F85F009E0DE3 /* LeanMessageManager.m in Sources */,
 				AAE0F2901CD9D1AE009E0DE3 /* NSArray+SafeAccess.m in Sources */,
 				AAE0F2881CD9D1AE009E0DE3 /* LCProject.m in Sources */,
+				AAE0F2F61CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m in Sources */,
+				AAE0F2F01CD9F8D3009E0DE3 /* DemoMessagesViewController.m in Sources */,
 				AAE0F2931CD9D1AE009E0DE3 /* NSData+Hash.m in Sources */,
 				AAE0F2891CD9D1AE009E0DE3 /* LCTeam.m in Sources */,
+				AAE0F2F11CD9F8D3009E0DE3 /* NSUserDefaults+DemoSettings.m in Sources */,
 				AAE0F2CB1CD9D1AE009E0DE3 /* MBTools.m in Sources */,
 				AAE0F2871CD9D1AE009E0DE3 /* LCBugList.m in Sources */,
 				AAE0F2C81CD9D1AE009E0DE3 /* TextImageView.m in Sources */,
@@ -934,6 +1038,7 @@
 				AAE0F27B1CD9D1AE009E0DE3 /* AppDelegate.m in Sources */,
 				AAE0F2971CD9D1AE009E0DE3 /* NSDictionary+JSONString.m in Sources */,
 				AAE0F2CA1CD9D1AE009E0DE3 /* KeyUserManager.m in Sources */,
+				AAE0F2E41CD9DAE6009E0DE3 /* ChatViewController.m in Sources */,
 				AAE0F28D1CD9D1AE009E0DE3 /* CCNetClient.m in Sources */,
 				AAE0F27D1CD9D1AE009E0DE3 /* BHBaseViewController.m in Sources */,
 				AAE0F29D1CD9D1AE009E0DE3 /* NSNumber+Round.m in Sources */,
@@ -941,6 +1046,7 @@
 				AAE0F2A41CD9D1AE009E0DE3 /* UIImage+Extension.m in Sources */,
 				AAE0F2821CD9D1AE009E0DE3 /* MessageViewController.m in Sources */,
 				AAE0F2801CD9D1AE009E0DE3 /* AddressTableCell.m in Sources */,
+				AAE0F2F21CD9F8D3009E0DE3 /* XHPhotographyHelper.m in Sources */,
 				AAE0F29E1CD9D1AE009E0DE3 /* NSObject+Reflection.m in Sources */,
 				AAE0F2A31CD9D1AE009E0DE3 /* UIColor+Extension.m in Sources */,
 				AAE0F29C1CD9D1AE009E0DE3 /* NSNotificationCenter+MainThread.m in Sources */,
@@ -1063,8 +1169,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BugBox/Supports/other/BugBoxPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BugBox/Supports/other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.megahealth.BugBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1077,8 +1187,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BugBox/Supports/other/BugBoxPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BugBox/Supports/other/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.megahealth.BugBox;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

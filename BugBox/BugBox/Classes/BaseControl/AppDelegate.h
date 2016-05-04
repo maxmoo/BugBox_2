@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "BHRootTabBarController.h"
+#import "LCUser.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
 @property (strong, nonatomic) BHRootTabBarController *rootTabBar;
+
+//用户信息
+@property (nonatomic, strong) LCUser *user;
 
 @end
 
