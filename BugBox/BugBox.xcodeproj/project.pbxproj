@@ -106,6 +106,11 @@
 		AAE0F2F61CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F2F51CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m */; };
 		AAE0F2F91CD9FB44009E0DE3 /* libJSQMessagesViewController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2F71CD9FB44009E0DE3 /* libJSQMessagesViewController.a */; };
 		AAE0F2FA1CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAE0F2F81CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a */; };
+		AAE220BC1CDC9354002669CB /* member_type_100@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE220B81CDC9354002669CB /* member_type_100@2x.png */; };
+		AAE220BD1CDC9354002669CB /* member_type_100@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE220B91CDC9354002669CB /* member_type_100@3x.png */; };
+		AAE220BE1CDC9354002669CB /* member_type_90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE220BA1CDC9354002669CB /* member_type_90@2x.png */; };
+		AAE220BF1CDC9354002669CB /* member_type_90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAE220BB1CDC9354002669CB /* member_type_90@3x.png */; };
+		AAE220C21CDC93D2002669CB /* MeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE220C11CDC93D2002669CB /* MeTableViewCell.m */; };
 		B0E8F43A08011EAD63CC05C6 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 194DEB091209B55D56EB2BBC /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -279,6 +284,12 @@
 		AAE0F2F51CD9FAA4009E0DE3 /* XHDisplayMediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XHDisplayMediaViewController.m; sourceTree = "<group>"; };
 		AAE0F2F71CD9FB44009E0DE3 /* libJSQMessagesViewController.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQMessagesViewController.a; path = "Pods/../build/Debug-iphoneos/libJSQMessagesViewController.a"; sourceTree = "<group>"; };
 		AAE0F2F81CD9FB44009E0DE3 /* libJSQSystemSoundPlayer.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libJSQSystemSoundPlayer.a; path = "Pods/../build/Debug-iphoneos/libJSQSystemSoundPlayer.a"; sourceTree = "<group>"; };
+		AAE220B81CDC9354002669CB /* member_type_100@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member_type_100@2x.png"; sourceTree = "<group>"; };
+		AAE220B91CDC9354002669CB /* member_type_100@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member_type_100@3x.png"; sourceTree = "<group>"; };
+		AAE220BA1CDC9354002669CB /* member_type_90@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member_type_90@2x.png"; sourceTree = "<group>"; };
+		AAE220BB1CDC9354002669CB /* member_type_90@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member_type_90@3x.png"; sourceTree = "<group>"; };
+		AAE220C01CDC93D2002669CB /* MeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeTableViewCell.h; sourceTree = "<group>"; };
+		AAE220C11CDC93D2002669CB /* MeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -406,6 +417,8 @@
 			children = (
 				AAE0F1D61CD9D1AE009E0DE3 /* MeViewController.h */,
 				AAE0F1D71CD9D1AE009E0DE3 /* MeViewController.m */,
+				AAE220C01CDC93D2002669CB /* MeTableViewCell.h */,
+				AAE220C11CDC93D2002669CB /* MeTableViewCell.m */,
 			);
 			path = me;
 			sourceTree = "<group>";
@@ -692,6 +705,7 @@
 		AAE0F2401CD9D1AE009E0DE3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				AAE220B71CDC9354002669CB /* me */,
 				AAE0F2411CD9D1AE009E0DE3 /* tabbar */,
 				AAE0F2561CD9D1AE009E0DE3 /* tag_button */,
 				AAE0F25D1CD9D1AE009E0DE3 /* test */,
@@ -867,6 +881,17 @@
 			path = display;
 			sourceTree = "<group>";
 		};
+		AAE220B71CDC9354002669CB /* me */ = {
+			isa = PBXGroup;
+			children = (
+				AAE220B81CDC9354002669CB /* member_type_100@2x.png */,
+				AAE220B91CDC9354002669CB /* member_type_100@3x.png */,
+				AAE220BA1CDC9354002669CB /* member_type_90@2x.png */,
+				AAE220BB1CDC9354002669CB /* member_type_90@3x.png */,
+			);
+			path = me;
+			sourceTree = "<group>";
+		};
 		B79A11CD8F8F1C802805893B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -947,6 +972,7 @@
 				AAE0F2AA1CD9D1AE009E0DE3 /* me_selected@3x.png in Resources */,
 				AAE0F2B01CD9D1AE009E0DE3 /* project_normal@3x.png in Resources */,
 				AAE0F2B31CD9D1AE009E0DE3 /* task_normal@2x.png in Resources */,
+				AAE220BE1CDC9354002669CB /* member_type_90@2x.png in Resources */,
 				AAE0F2C51CD9D1AE009E0DE3 /* LaunchScreen.storyboard in Resources */,
 				AAE0F2C11CD9D1AE009E0DE3 /* coding_emoji_gif_05@2x.png in Resources */,
 				AAE0F2961CD9D1AE009E0DE3 /* NSDateTimeAgo.bundle in Resources */,
@@ -956,6 +982,7 @@
 				AAE0F2AF1CD9D1AE009E0DE3 /* project_normal@2x.png in Resources */,
 				AAE0F2BC1CD9D1AE009E0DE3 /* tag_button_add@3x.png in Resources */,
 				AAE0F2BA1CD9D1AE009E0DE3 /* tweet_selected@3x.png in Resources */,
+				AAE220BF1CDC9354002669CB /* member_type_90@3x.png in Resources */,
 				AAE0F2BE1CD9D1AE009E0DE3 /* tag_button_editColor@3x.png in Resources */,
 				AAE0F2A91CD9D1AE009E0DE3 /* me_selected@2x.png in Resources */,
 				AAE0F2BD1CD9D1AE009E0DE3 /* tag_button_editColor@2x.png in Resources */,
@@ -970,8 +997,10 @@
 				AAE0F2AC1CD9D1AE009E0DE3 /* privatemessage_normal@3x.png in Resources */,
 				AAE0F2B51CD9D1AE009E0DE3 /* task_selected@2x.png in Resources */,
 				AAE0F2A71CD9D1AE009E0DE3 /* me_normal@2x.png in Resources */,
+				AAE220BD1CDC9354002669CB /* member_type_100@3x.png in Resources */,
 				AAE0F2A81CD9D1AE009E0DE3 /* me_normal@3x.png in Resources */,
 				AAE0F2C41CD9D1AE009E0DE3 /* Assets.xcassets in Resources */,
+				AAE220BC1CDC9354002669CB /* member_type_100@2x.png in Resources */,
 				AAE0F2AB1CD9D1AE009E0DE3 /* privatemessage_normal@2x.png in Resources */,
 				AAE0F2B71CD9D1AE009E0DE3 /* tweet_normal@2x.png in Resources */,
 				AAE0F2C61CD9D1AE009E0DE3 /* Info.plist in Resources */,
@@ -1023,6 +1052,7 @@
 				AAE0F28B1CD9D1AE009E0DE3 /* AFError.m in Sources */,
 				AAE0F27C1CD9D1AE009E0DE3 /* BHBaseNavigationController.m in Sources */,
 				AAE0F2A11CD9D1AE009E0DE3 /* NSString+RegexCategory.m in Sources */,
+				AAE220C21CDC93D2002669CB /* MeTableViewCell.m in Sources */,
 				AAE0F2981CD9D1AE009E0DE3 /* NSDictionary+Merge.m in Sources */,
 				AAE0F28A1CD9D1AE009E0DE3 /* LCUser.m in Sources */,
 				AAE0F2A51CD9D1AE009E0DE3 /* UILabel+extension.m in Sources */,
