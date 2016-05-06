@@ -19,5 +19,7 @@
 #import "LCURL.h"
 #import "Categories.h"
 #import "BoxDefine.h"
+#import "POP.h"
+#import "TSMessage.h"
 
 #endif /* BugBoxPrefixHeader_pch */

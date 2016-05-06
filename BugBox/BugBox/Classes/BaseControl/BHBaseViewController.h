@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
 
 @interface BHBaseViewController : UIViewController
+
+- (void)showErrorMessageWithTitle:(NSString *)title message:(NSString *)message;
+- (void)showWindowActivityHudWithString:(NSString *)message;
+- (void)hidActivityHUD;
 
 @end

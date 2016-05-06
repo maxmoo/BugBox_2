@@ -16,9 +16,21 @@ typedef void(^requestBackData)(id data, NSError *error, RequestState state);
 
 @interface BBRequestManager : NSObject
 
-
+//**********************TEXT***********************************
 + (void)findAllUsers:(requestBackData)backBlock;
 
 + (void)findAllProjects:(requestBackData)block;
+
++ (void)findUserWithUsername:(NSString *)username block:(requestBackData)block;
+
+
+//**********************登录注册***********************************
++ (void)loginWithPhoneNumber:(NSString *)phone
+                 andPassword:(NSString *)password
+                       block:(requestBackData)block;
+
++ (void)registerWithPhoneNumber:(NSString *)phone
+                    andPassword:(NSString *)password
+                          block:(requestBackData)block;
 
 @end

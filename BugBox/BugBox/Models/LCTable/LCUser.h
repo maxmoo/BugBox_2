@@ -17,6 +17,7 @@
 @property (nonatomic, copy) NSString    *nickName;
 @property (nonatomic, copy) NSArray     *teams;
 @property (nonatomic, copy) NSString    *phoneNumber;
+@property (nonatomic, copy) NSString    *password;
 
 - (LCUser *)initUserWithDictionary:(NSDictionary *)dict;
 

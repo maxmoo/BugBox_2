@@ -14,6 +14,7 @@
 #import "LCProject.h"
 #import "ProjectDetailController.h"
 #import "MJRefresh.h"
+#import "LoginViewController.h"
 
 @interface ProjectViewController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -27,6 +28,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    LoginViewController *login = [[LoginViewController alloc] init];
+    [self presentViewController:login animated:YES completion:nil];
     
     self.title = @"项目";
     

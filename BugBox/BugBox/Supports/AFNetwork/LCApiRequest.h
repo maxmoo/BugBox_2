@@ -12,6 +12,8 @@
 
 
 typedef NS_ENUM(NSInteger, RequestState) {
+    RequestStateCodeSuccess = 100,
+    RequestStateCodeFaild = 101,
     RequestStateCodeLogin = 200,
     RequestStateCodeRegister = 201,
     RequestStateCodeOther = 1,

@@ -9,14 +9,20 @@
 #import "BHBaseViewController.h"
 #import "AppDelegate.h"
 
-@interface BHBaseViewController ()
-
+@interface BHBaseViewController ()<TSMessageViewProtocol>
+{
+    MBProgressHUD *activityHUD;
+}
 @end
 
 @implementation BHBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    [TSMessage setDefaultViewController:self];
+    [TSMessage setDelegate:self];
     
     self.view.backgroundColor = BACKCOLOR;
 }
@@ -35,6 +41,27 @@
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
+}
+
+- (void)showErrorMessageWithTitle:(NSString *)title message:(NSString *)message{
+    
+    [TSMessage showNotificationWithTitle:NSLocalizedString(title, nil)
+                                subtitle:NSLocalizedString(message, nil)
+                                    type:TSMessageNotificationTypeError];
+}
+
+- (void)showWindowActivityHudWithString:(NSString *)message{
+    UIView *view = [UIApplication sharedApplication].keyWindow;
+    activityHUD = [MBProgressHUD showHUDAddedTo:view animated:YES];
+    activityHUD.labelText = message;
+    activityHUD.labelFont = [UIFont systemFontOfSize:12.0f];
+    activityHUD.margin = 20.f;
+    activityHUD.alpha = 1.0;
+    activityHUD.userInteractionEnabled = NO;
+    activityHUD.dimBackground = NO;
+}
+- (void)hidActivityHUD{
+    [activityHUD hide:YES];
 }
 
 @end

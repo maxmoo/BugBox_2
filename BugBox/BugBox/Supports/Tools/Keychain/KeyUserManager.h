@@ -14,4 +14,8 @@
 +(id)readPassWord;
 +(void)savePassWord:(NSString *)password;
 
++(void)saveUser:(NSString *)user;
++(id)readUser;
++(void)deleteUser;
+
 @end

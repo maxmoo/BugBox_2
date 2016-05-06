@@ -33,4 +33,53 @@
     }];
 }
 
++ (void)findUserWithUsername:(NSString *)username block:(requestBackData)block{
+    LCApiRequest *request = [[LCApiRequest alloc] init];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:username,@"nickName", nil];
+    [request requestJsonDataWithPath:LC_USER matching:dict withParams:nil withMethodType:Get andBlock:^(id data, NSError *error, RequestState state) {
+        block(data,error,state);
+    }];
+}
+
+
++ (void)loginWithPhoneNumber:(NSString *)phone
+                 andPassword:(NSString *)password
+                       block:(requestBackData)block{
+    
+    LCApiRequest *request = [[LCApiRequest alloc] init];
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:phone,@"phoneNumber", nil];
+    
+    [request requestJsonDataWithPath:LC_USER matching:dict withParams:nil withMethodType:Get andBlock:^(id data, NSError *error, RequestState state) {
+        if (!error) {
+            NSArray *array = [data objectForKey:@"results"];
+            if (array.count > 0) {
+                LCUser *user = [[LCUser alloc] initUserWithDictionary:array[0]];
+                if ([user.password isEqualToString:password]) {
+                    block(data,error,RequestStateCodeSuccess);
+                }else{
+                    block(data,error,RequestStateCodeFaild);
+                }
+            }else{
+                block(data,error,RequestStateCodeFaild);
+            }
+        }
+    }];
+    
+}
+
++ (void)registerWithPhoneNumber:(NSString *)phone
+                    andPassword:(NSString *)password
+                          block:(requestBackData)block{
+    
+    LCApiRequest *request = [[LCApiRequest alloc] init];
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:phone,@"phoneNumber",password,@"password", nil];
+    
+    [request requestJsonDataWithPath:LC_USER withParams:dict withMethodType:Post andBlock:^(id data, NSError *error, RequestState state) {
+        block(data,error,state);
+    }];
+    
+}
+
 @end

@@ -23,7 +23,7 @@
 
 - (void)dealSubviews{
     
-    self.backgroundColor = RGBCOLOR(59, 189, 121);
+    self.backgroundColor = [UIColor colorWithRed:0.168 green:0.523 blue:0.896 alpha:1.000];
     self.image = [UIImage imageWithColor:RGBCOLOR(59, 189, 121)];
     self.layer.cornerRadius = self.width/2;
     self.layer.masksToBounds = YES;

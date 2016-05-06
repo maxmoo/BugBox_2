@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AA5D20B31CDB29BD00DFB9CE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5D20B21CDB29BD00DFB9CE /* LoginViewController.m */; };
+		AA5D20B61CDB29F500DFB9CE /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA5D20B51CDB29F500DFB9CE /* RegisterViewController.m */; };
 		AAE0F27B1CD9D1AE009E0DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F1C71CD9D1AE009E0DE3 /* AppDelegate.m */; };
 		AAE0F27C1CD9D1AE009E0DE3 /* BHBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F1C91CD9D1AE009E0DE3 /* BHBaseNavigationController.m */; };
 		AAE0F27D1CD9D1AE009E0DE3 /* BHBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE0F1CB1CD9D1AE009E0DE3 /* BHBaseViewController.m */; };
@@ -111,6 +113,10 @@
 		194DEB091209B55D56EB2BBC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		19C56ACF3BF94F6051E3D1E2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		5D7DD8DE51F10FD40FB13D1E /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		AA5D20B11CDB29BD00DFB9CE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AA5D20B21CDB29BD00DFB9CE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AA5D20B41CDB29F500DFB9CE /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		AA5D20B51CDB29F500DFB9CE /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
 		AAE0F1AA1CD9D15E009E0DE3 /* BugBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BugBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAE0F1C61CD9D1AE009E0DE3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AAE0F1C71CD9D1AE009E0DE3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -361,6 +367,10 @@
 		AAE0F1CE1CD9D1AE009E0DE3 /* LoginControl */ = {
 			isa = PBXGroup;
 			children = (
+				AA5D20B11CDB29BD00DFB9CE /* LoginViewController.h */,
+				AA5D20B21CDB29BD00DFB9CE /* LoginViewController.m */,
+				AA5D20B41CDB29F500DFB9CE /* RegisterViewController.h */,
+				AA5D20B51CDB29F500DFB9CE /* RegisterViewController.m */,
 			);
 			path = LoginControl;
 			sourceTree = "<group>";
@@ -1008,6 +1018,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA5D20B31CDB29BD00DFB9CE /* LoginViewController.m in Sources */,
 				AAE0F29F1CD9D1AE009E0DE3 /* NSString+Base64.m in Sources */,
 				AAE0F28B1CD9D1AE009E0DE3 /* AFError.m in Sources */,
 				AAE0F27C1CD9D1AE009E0DE3 /* BHBaseNavigationController.m in Sources */,
@@ -1059,6 +1070,7 @@
 				AAE0F2A01CD9D1AE009E0DE3 /* NSString+Hash.m in Sources */,
 				AAE0F28C1CD9D1AE009E0DE3 /* BBRequestManager.m in Sources */,
 				AAE0F2A21CD9D1AE009E0DE3 /* NSTimer+Blocks.m in Sources */,
+				AA5D20B61CDB29F500DFB9CE /* RegisterViewController.m in Sources */,
 				AAE0F2841CD9D1AE009E0DE3 /* ProjectTableViewCell.m in Sources */,
 				AAE0F29A1CD9D1AE009E0DE3 /* NSDictionary+XML.m in Sources */,
 				AAE0F2921CD9D1AE009E0DE3 /* NSData+Encrypt.m in Sources */,

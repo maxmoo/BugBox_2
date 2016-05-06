@@ -25,6 +25,7 @@
         self.projects       = [dict objectForKey:@"projects"];
         self.nickName       = [dict objectForKey:@"nickName"];
         self.phoneNumber    = [dict objectForKey:@"phoneNumber"];
+        self.password       = [dict objectForKey:@"password"];
     }
     
     return self;

@@ -121,6 +121,9 @@
         NSArray *resutArray = [data objectForKey:@"results"];
         for (NSDictionary *dict in resutArray) {
             LCUser *user = [[LCUser alloc]initUserWithDictionary:dict];
+            if ([user.userId isEqualToString:APPDELEGATE.user.userId]) {
+                continue;
+            }
             [_addressUserArray addObject:user];
         }
         

@@ -28,6 +28,7 @@
     [hud hide:YES afterDelay:2];
 }
 
+
 + (NSDate *)dateWithLeanCloudString:(NSString *)string{
     NSString *subString = [string substringToIndex:10];
     

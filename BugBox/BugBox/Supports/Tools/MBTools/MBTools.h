@@ -14,6 +14,7 @@
 
 //可以直接调用MBHUD
 + (void)showWindowHudWithString:(NSString *)message;
++ (void)showWindowActivityHudWithString:(NSString *)message;
 //转化leancloud时间戳
 + (NSDate *)dateWithLeanCloudString:(NSString *)string;
 
