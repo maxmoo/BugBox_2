@@ -10,6 +10,10 @@
 #import <AVOSCloud/AVOSCloud.h>
 #import <AVOSCloudIM.h>
 
+//test
+#import "TestModel.h"
+#import "JKDBModel.h"
+
 @interface MessageViewController ()<AVIMClientDelegate>
 {
     UITextField *sendTextField;
@@ -33,6 +37,7 @@
 //    [self initSubviews];
     
 //    [self tomSendMessageToJerry];
+
 }
 //tom-----------------------------------------------------------------------
 - (void)tomSendMessageToJerry {

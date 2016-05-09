@@ -57,4 +57,18 @@
     NSString *dateString = [dateFormatter stringFromDate:date];
     return dateString;
 }
+
++ (CGFloat)heightForText:(NSString *)text font:(UIFont *)font width:(CGFloat)width xSet:(CGFloat)xSet ySet:(CGFloat)ySet{
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, width, 0)];
+    label.text = text;
+    label.font = font;
+    [label setColumnSpace:xSet];
+    [label setRowSpace:ySet];
+    label.numberOfLines = 0;
+    [label sizeToFit];
+    
+    return label.height;
+}
+
 @end

@@ -54,7 +54,9 @@
     _createTimeLabel.textAlignment = NSTextAlignmentRight;
     [self.contentView addSubview:_createTimeLabel];
     
-    _describeLabel = [self createCellLabelWithFrame:CGRectMake(10, 65, SCREEN_WIDTH - 20, 30)];
+    _describeLabel = [self createCellLabelWithFrame:CGRectMake(10, 70, SCREEN_WIDTH - 20, 30)];
+    _describeLabel.numberOfLines = 0;
+//    _describeLabel.backgroundColor = [UIColor redColor];
     [self.contentView addSubview:_describeLabel];
 
 }
@@ -66,6 +68,10 @@
     _creatorLabel.text = self.project.creatorName;
     _createTimeLabel.text = [MBTools stringWithDate:self.project.createTime formatString:@"yyyy年MM月dd日"];
     _describeLabel.text = self.project.projectDescribe;
+    [_describeLabel setColumnSpace:1];
+    [_describeLabel setRowSpace:3];
+    [_describeLabel sizeToFit];
+//    DLog(@"string:%@",self.project.projectDescribe);
 }
 
 - (UILabel *)createCellLabelWithFrame:(CGRect)frame{

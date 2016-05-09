@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+@class LCProject;
 @interface ProjectDetailController : UIViewController
 
-@property (nonatomic, copy) NSString *projectName;
+@property (nonatomic, strong) LCProject *project;
 
 @end

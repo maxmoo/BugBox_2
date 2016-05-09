@@ -79,7 +79,7 @@
     static NSInteger times = 0;
     [[LeanMessageManager manager] openSessionWithClientID:clientId completion:^(BOOL succeeded, NSError *error) {
         times++;
-        NSLog(@"times = %ld", times);
+        NSLog(@"times = %ld", (long)times);
         if(!error){
             ConversationType type;
             if(clientIDs.count>1){

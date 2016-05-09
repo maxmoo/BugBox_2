@@ -14,7 +14,6 @@
 
 //可以直接调用MBHUD
 + (void)showWindowHudWithString:(NSString *)message;
-+ (void)showWindowActivityHudWithString:(NSString *)message;
 //转化leancloud时间戳
 + (NSDate *)dateWithLeanCloudString:(NSString *)string;
 
@@ -30,5 +29,7 @@
  * beforeString:格式化之前的日期格式，afterString：为需要转化的格式字符串@"yyyy-MM-dd"
  */
 + (NSString *)formatString:(NSString *)string withFormatBeforeString:(NSString *)beforeString andFormatAfterString:(NSString *)afterString;
+
++ (CGFloat)heightForText:(NSString *)text font:(UIFont *)font width:(CGFloat)width xSet:(CGFloat)xSet ySet:(CGFloat)ySet;
 
 @end

@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FMDB.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>HexColors.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -52,7 +57,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>176819574B7E391C82310E0C812276C0</key>
+		<key>087637EAC889A2E2F8A87ED2899BA81A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>0C9AFCADAED19A03D7E59F405B121988</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>3E8D1A68948B4F7418E71848888C578E</key>
+		<key>24074FF8A5EAF58122908F22AC48F068</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -72,27 +82,27 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>72D8AB20E6AE703368C4F8F73303E367</key>
+		<key>4F073969CB32E14D497204F28E732DC9</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A7E74E56C1FEF961E17FF7DE2B8A86B2</key>
+		<key>63AE90B8CBADB0AC3E4D5D4F86308983</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC79ACF8FEFACAB6EFAA6DE69348AFE2</key>
+		<key>BB1AFBCF8E63126B63A76AA6D53FCFDF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E63AF26070121865D022ED66B811929C</key>
+		<key>DC086B75C81BF3D7EED43133DA425CBA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E655BD3F888D136A317B07853397EEB9</key>
+		<key>E2BFD84EB97C3906C4A461DDA9D13E67</key>
 		<dict>
 			<key>primary</key>
 			<true/>

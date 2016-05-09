@@ -7,7 +7,6 @@
 //
 
 #import "ProjectViewController.h"
-#import "CCActionSheet.h"
 #import "AddProjectController.h"
 #import "ProjectTableViewCell.h"
 #import "BBRequestManager.h"
@@ -18,7 +17,6 @@
 
 @interface ProjectViewController ()<UITableViewDataSource,UITableViewDelegate>
 
-@property (nonatomic, strong) CCActionSheet *sheet;
 @property (nonatomic, strong) UITableView *projectListTableView;
 @property (nonatomic, strong) NSMutableArray *projectArray;
 
@@ -37,10 +35,10 @@
     self.view.backgroundColor = BACKCOLOR;
     [self initData];
     [self requestProjectData];
-    [self creatCCActionSheet];
     [self initRightItem];
     [self initProjectTableView];
     [self initMJRefreshHeaderAndFooter];
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated{
@@ -57,7 +55,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    LCProject *project = [self.projectArray objectAtIndex:indexPath.row];
+    CGFloat height = [self heightForString:project.projectDescribe];
+    return height+80;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -79,7 +79,7 @@
     
     ProjectDetailController *projectDetail = [[ProjectDetailController alloc] init];
     LCProject *project = [self.projectArray objectAtIndex:indexPath.row];
-    projectDetail.projectName = project.projectName;
+    projectDetail.project = project;
     [self.navigationController pushViewController:projectDetail animated:YES];
     
 }
@@ -90,22 +90,6 @@
     self.projectArray = [NSMutableArray array];
 }
 
-- (void)addProject{
-    [_sheet show];
-}
-
-- (void)newProject:(NSInteger)index{
-    if (index == 0) {
-        DLog(@"new");
-        [self pushAddressVC];
-    }else if (index == 1){
-        DLog(@"all");
-    }else if (index == 2){
-        DLog(@"complete");
-    }else{
-        DLog(@"cancel");
-    }
-}
 
 - (void)requestProjectData{
     [BBRequestManager findAllProjects:^(id data, NSError *error, RequestState state) {
@@ -149,12 +133,6 @@
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:rightItemButton];
 }
 
-- (void)creatCCActionSheet{
-    _sheet = [[CCActionSheet alloc] initWithTitle:nil clickedAtIndex:^(NSInteger index) {
-        [self newProject:index];
-    } cancelButtonTitle:@"取消" otherButtonTitles:@"新建项目",@"所有项目",@"已完成项目",nil];
-}
-
 - (void)initProjectTableView{
     _projectListTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) style:UITableViewStylePlain];
     _projectListTableView.backgroundColor = BACKCOLOR;
@@ -175,17 +153,11 @@
     [header beginRefreshing];
     // 设置header
     _projectListTableView.mj_header = header;
+}
+
+- (CGFloat)heightForString:(NSString *)string{
     
-//    // 设置回调（一旦进入刷新状态，就调用target的action，也就是调用self的loadMoreData方法）
-//    MJRefreshAutoNormalFooter *footer = [MJRefreshAutoNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreData)];
-//    // 当上拉刷新控件出现50%时（出现一半），就会自动刷新。这个值默认是1.0（也就是上拉刷新100%出现时，才会自动刷新）
-//    //    footer.triggerAutomaticallyRefreshPercent = 0.5;
-//    // 隐藏刷新状态的文字
-//    footer.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
-//    footer.refreshingTitleHidden = YES;
-//    [footer setTitle:@"" forState:MJRefreshStateIdle];
-//    // 设置footer
-//    _projectListTableView.mj_footer = footer;
+    return [MBTools heightForText:string font:[UIFont systemFontOfSize:13.0f] width:SCREEN_WIDTH - 20 xSet:1 ySet:3];
 }
 
 - (void)didReceiveMemoryWarning {
