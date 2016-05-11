@@ -127,6 +127,10 @@
 		AAE220CE1CE027A4002669CB /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE220C91CE027A4002669CB /* UIImage+Extension.m */; };
 		AAE220CF1CE027A4002669CB /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE220CB1CE027A4002669CB /* Utility.m */; };
 		AAE220D31CE02C49002669CB /* TestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE220D21CE02C49002669CB /* TestModel.m */; };
+		AAE52D5B1CE1774E00A5CECF /* BugListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE52D5A1CE1774E00A5CECF /* BugListViewController.m */; };
+		AAE52D5E1CE1776F00A5CECF /* MenberListController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE52D5D1CE1776F00A5CECF /* MenberListController.m */; };
+		AAE52D611CE1895D00A5CECF /* BugTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE52D601CE1895D00A5CECF /* BugTableViewCell.m */; };
+		AAE52D641CE2D41000A5CECF /* LCVersionList.m in Sources */ = {isa = PBXBuildFile; fileRef = AAE52D631CE2D41000A5CECF /* LCVersionList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -340,6 +344,14 @@
 		AAE220CB1CE027A4002669CB /* Utility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utility.m; sourceTree = "<group>"; };
 		AAE220D11CE02C49002669CB /* TestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestModel.h; sourceTree = "<group>"; };
 		AAE220D21CE02C49002669CB /* TestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestModel.m; sourceTree = "<group>"; };
+		AAE52D591CE1774E00A5CECF /* BugListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugListViewController.h; sourceTree = "<group>"; };
+		AAE52D5A1CE1774E00A5CECF /* BugListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugListViewController.m; sourceTree = "<group>"; };
+		AAE52D5C1CE1776F00A5CECF /* MenberListController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenberListController.h; sourceTree = "<group>"; };
+		AAE52D5D1CE1776F00A5CECF /* MenberListController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenberListController.m; sourceTree = "<group>"; };
+		AAE52D5F1CE1895D00A5CECF /* BugTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugTableViewCell.h; sourceTree = "<group>"; };
+		AAE52D601CE1895D00A5CECF /* BugTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugTableViewCell.m; sourceTree = "<group>"; };
+		AAE52D621CE2D41000A5CECF /* LCVersionList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCVersionList.h; sourceTree = "<group>"; };
+		AAE52D631CE2D41000A5CECF /* LCVersionList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCVersionList.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -511,6 +523,8 @@
 		AAE0F1DB1CD9D1AE009E0DE3 /* project */ = {
 			isa = PBXGroup;
 			children = (
+				AAE52D571CE1772D00A5CECF /* bugList */,
+				AAE52D581CE1772D00A5CECF /* menberList */,
 				AAE0F1DC1CD9D1AE009E0DE3 /* addProject */,
 				AAE0F1DF1CD9D1AE009E0DE3 /* projectCell */,
 				AAE0F1E21CD9D1AE009E0DE3 /* projectDetail */,
@@ -570,6 +584,8 @@
 				AAE0F1EF1CD9D1AE009E0DE3 /* LCTeam.m */,
 				AAE0F1F01CD9D1AE009E0DE3 /* LCUser.h */,
 				AAE0F1F11CD9D1AE009E0DE3 /* LCUser.m */,
+				AAE52D621CE2D41000A5CECF /* LCVersionList.h */,
+				AAE52D631CE2D41000A5CECF /* LCVersionList.m */,
 			);
 			path = LCTable;
 			sourceTree = "<group>";
@@ -996,6 +1012,26 @@
 			path = MCache;
 			sourceTree = "<group>";
 		};
+		AAE52D571CE1772D00A5CECF /* bugList */ = {
+			isa = PBXGroup;
+			children = (
+				AAE52D591CE1774E00A5CECF /* BugListViewController.h */,
+				AAE52D5A1CE1774E00A5CECF /* BugListViewController.m */,
+				AAE52D5F1CE1895D00A5CECF /* BugTableViewCell.h */,
+				AAE52D601CE1895D00A5CECF /* BugTableViewCell.m */,
+			);
+			path = bugList;
+			sourceTree = "<group>";
+		};
+		AAE52D581CE1772D00A5CECF /* menberList */ = {
+			isa = PBXGroup;
+			children = (
+				AAE52D5C1CE1776F00A5CECF /* MenberListController.h */,
+				AAE52D5D1CE1776F00A5CECF /* MenberListController.m */,
+			);
+			path = menberList;
+			sourceTree = "<group>";
+		};
 		B79A11CD8F8F1C802805893B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1060,6 +1096,7 @@
 				TargetAttributes = {
 					AAE0F1A91CD9D15E009E0DE3 = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = TF253L9KC9;
 					};
 				};
 			};
@@ -1214,6 +1251,7 @@
 				AA4F30121CE07489009F2F9B /* ProjectHeadCell.m in Sources */,
 				AAE0F29D1CD9D1AE009E0DE3 /* NSNumber+Round.m in Sources */,
 				AAE0F28F1CD9D1AE009E0DE3 /* LCRequestError.m in Sources */,
+				AAE52D5E1CE1776F00A5CECF /* MenberListController.m in Sources */,
 				AAE0F2A41CD9D1AE009E0DE3 /* UIImage+Extension.m in Sources */,
 				AAE0F2821CD9D1AE009E0DE3 /* MessageViewController.m in Sources */,
 				AAE220CC1CE027A4002669CB /* JKDBHelper.m in Sources */,
@@ -1226,6 +1264,7 @@
 				AAE0F2C91CD9D1AE009E0DE3 /* Keychain.m in Sources */,
 				AAE0F2C21CD9D1AE009E0DE3 /* CCActionSheet.m in Sources */,
 				AAE0F2C31CD9D1AE009E0DE3 /* CCActionTableCell.m in Sources */,
+				AAE52D641CE2D41000A5CECF /* LCVersionList.m in Sources */,
 				AAE0F29B1CD9D1AE009E0DE3 /* NSFileManager+Paths.m in Sources */,
 				AAE0F2911CD9D1AE009E0DE3 /* NSData+Base64.m in Sources */,
 				AAE0F2831CD9D1AE009E0DE3 /* AddProjectController.m in Sources */,
@@ -1235,10 +1274,12 @@
 				AA5D20B61CDB29F500DFB9CE /* RegisterViewController.m in Sources */,
 				AAE0F2841CD9D1AE009E0DE3 /* ProjectTableViewCell.m in Sources */,
 				AAE0F29A1CD9D1AE009E0DE3 /* NSDictionary+XML.m in Sources */,
+				AAE52D611CE1895D00A5CECF /* BugTableViewCell.m in Sources */,
 				AAE0F2921CD9D1AE009E0DE3 /* NSData+Encrypt.m in Sources */,
 				AAE0F2A61CD9D1AE009E0DE3 /* UIViewExt.m in Sources */,
 				AAE0F2941CD9D1AE009E0DE3 /* NSDate+Extension.m in Sources */,
 				AAE0F2851CD9D1AE009E0DE3 /* ProjectDetailController.m in Sources */,
+				AAE52D5B1CE1774E00A5CECF /* BugListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1341,6 +1382,7 @@
 			baseConfigurationReference = 5D7DD8DE51F10FD40FB13D1E /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BugBox/Supports/other/BugBoxPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BugBox/Supports/other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
@@ -1359,6 +1401,7 @@
 			baseConfigurationReference = 19C56ACF3BF94F6051E3D1E2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/BugBox/Supports/other/BugBoxPrefixHeader.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/BugBox/Supports/other/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;

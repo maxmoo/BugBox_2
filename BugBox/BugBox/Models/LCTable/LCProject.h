@@ -17,6 +17,7 @@
 @property (nonatomic, copy) NSString *creatorName;      //创建者
 @property (nonatomic, copy) NSString *version;          //项目版本
 @property (nonatomic, copy) NSString *projectDescribe;  //项目描述
+@property (nonatomic, copy) NSString *projectId;        //项目id
 
 - (LCProject *)initWithDictionary:(NSDictionary *)dict;
 

@@ -33,4 +33,11 @@ typedef void(^requestBackData)(id data, NSError *error, RequestState state);
                     andPassword:(NSString *)password
                           block:(requestBackData)block;
 
+//*
++ (void)findVersionsWithProjectId:(NSString *)projectId
+                            block:(requestBackData)block;
+
++ (void)findBugsWithVersionsArray:(NSArray *)versionArray
+                            block:(requestBackData)block;
+
 @end

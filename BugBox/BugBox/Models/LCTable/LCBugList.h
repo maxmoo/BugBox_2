@@ -10,6 +10,12 @@
 
 @interface LCBugList : NSObject
 
+@property (nonatomic, copy) NSString *versionId;
+@property (nonatomic, copy) NSString *bugInfo;
+
+
+- (LCBugList *)initWithDict:(NSDictionary *)dictionary;
+
 + (NSString *)bugListTableName;
 
 @end

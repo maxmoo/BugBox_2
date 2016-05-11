@@ -55,7 +55,7 @@
     [self.contentView addSubview:_createTimeLabel];
     
     _describeLabel = [self createCellLabelWithFrame:CGRectMake(10, 70, SCREEN_WIDTH - 20, 30)];
-    _describeLabel.numberOfLines = 0;
+//    _describeLabel.numberOfLines = 0;
 //    _describeLabel.backgroundColor = [UIColor redColor];
     [self.contentView addSubview:_describeLabel];
 
@@ -70,7 +70,7 @@
     _describeLabel.text = self.project.projectDescribe;
     [_describeLabel setColumnSpace:1];
     [_describeLabel setRowSpace:3];
-    [_describeLabel sizeToFit];
+//    [_describeLabel sizeToFit];
 //    DLog(@"string:%@",self.project.projectDescribe);
 }
 

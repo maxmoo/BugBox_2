@@ -23,6 +23,7 @@
         self.createTime         = [MBTools dateWithLeanCloudString:[dict objectForKey:@"createdAt"]];
         self.creatorName        = [dict objectForKey:@"projectCreator"];
         self.version            = [dict objectForKey:@"version"];
+        self.projectId          = [dict objectForKey:@"objectId"];
     }
     
     return self;

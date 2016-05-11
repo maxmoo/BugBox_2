@@ -13,5 +13,6 @@
 #import "LCTeam.h"
 #import "LCProject.h"
 #import "LCBugList.h"
+#import "LCVersionList.h"
 
 #endif /* LCHeader_h */

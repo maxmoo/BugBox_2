@@ -55,9 +55,9 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    LCProject *project = [self.projectArray objectAtIndex:indexPath.row];
-    CGFloat height = [self heightForString:project.projectDescribe];
-    return height+80;
+//    LCProject *project = [self.projectArray objectAtIndex:indexPath.row];
+//    CGFloat height = [self heightForString:project.projectDescribe];
+    return 100;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{

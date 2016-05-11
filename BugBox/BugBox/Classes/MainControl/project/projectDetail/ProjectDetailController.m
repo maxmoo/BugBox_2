@@ -9,6 +9,8 @@
 #import "ProjectDetailController.h"
 #import "ProjectDetailCell.h"
 #import "ProjectHeadCell.h"
+#import "BugListViewController.h"
+#import "MenberListController.h"
 
 @interface ProjectDetailController ()<UITableViewDataSource,UITableViewDelegate>
 
@@ -71,6 +73,9 @@
         }
         tableCell.titleString = [_tableListTitleArray objectAtIndex:indexPath.row];
         tableCell.iconImage = [_tableIconNameArray objectAtIndex:indexPath.row];
+        
+        tableCell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        
         return tableCell;
     }
 
@@ -78,7 +83,33 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    
+    if (indexPath.section == 1) {
+        switch (indexPath.row) {
+            case 0:
+            {
+                break;
+            }
+            case 1:
+            {
+                MenberListController *menber = [[MenberListController alloc] init];
+                [self.navigationController pushViewController:menber animated:YES];
+                break;
+            }
+            case 2:
+            {
+                BugListViewController *bugList = [[BugListViewController alloc] init];
+                bugList.projectId = self.project.projectId;
+                [self.navigationController pushViewController:bugList animated:YES];
+                break;
+            }
+            case 3:
+            {
+                break;
+            }
+            default:
+                break;
+        }
+    }
 }
 
 #pragma mark - Method

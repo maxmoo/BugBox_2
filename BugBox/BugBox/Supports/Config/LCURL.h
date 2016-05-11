@@ -13,5 +13,6 @@
 #define LC_TEAM     @"https://api.leancloud.cn/1.1/classes/Team"
 #define LC_PROJECT  @"https://api.leancloud.cn/1.1/classes/Project"
 #define LC_BUGLIST  @"https://api.leancloud.cn/1.1/classes/BugList"
+#define LC_VERSION  @"https://api.leancloud.cn/1.1/classes/VersionsList"
 
 #endif /* LCURL_h */

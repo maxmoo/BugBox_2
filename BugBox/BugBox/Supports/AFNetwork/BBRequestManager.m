@@ -82,4 +82,27 @@
     
 }
 
++ (void)findVersionsWithProjectId:(NSString *)projectId
+                            block:(requestBackData)block{
+    LCApiRequest *request = [[LCApiRequest alloc] init];
+    
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:projectId,@"projectId", nil];
+    
+    [request requestJsonDataWithPath:LC_VERSION matching:dict withParams:nil withMethodType:Get andBlock:^(id data, NSError *error, RequestState state) {
+        block(data,error,state);
+    }];
+}
+
++ (void)findBugsWithVersionsArray:(NSArray *)versionArray
+                            block:(requestBackData)block{
+    LCApiRequest *request = [[LCApiRequest alloc] init];
+    
+    NSDictionary *arrayDic = [NSDictionary dictionaryWithObjectsAndKeys:versionArray,@"$in", nil];
+    NSDictionary *dict = [NSDictionary dictionaryWithObjectsAndKeys:arrayDic,@"versionId", nil];
+    
+    [request requestJsonDataWithPath:LC_BUGLIST matching:dict withParams:nil withMethodType:Get andBlock:^(id data, NSError *error, RequestState state) {
+        block(data,error,state);
+    }];
+}
+
 @end
